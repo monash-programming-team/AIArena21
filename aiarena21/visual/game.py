@@ -119,6 +119,7 @@ class GameStateHandler:
 
     @classmethod
     def mainLoop(cls):
+        import time
         last_game = time.time()
         last_visual = time.time() - 1
         while True:
@@ -207,15 +208,17 @@ class GameStateHandler:
         # Scores
         ScreenManager.instance.REMAINING_TIME = payload['remaining_rounds']
 
-
-if __name__ == "__main__":
-    import time
+def run_visual(replay_file):
     os.environ["SDL_VIDEO_CENTERED"] = "1"  # You have to call this before pygame.init()
 
-    use_file_for_input('replay.txt')
+    use_file_for_input(replay_file)
 
     pygame.init()
 
     GameStateHandler()
     GameStateHandler.init()
     GameStateHandler.mainLoop()
+
+
+if __name__ == "__main__":
+    run_visual("replay.txt")

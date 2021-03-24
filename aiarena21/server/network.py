@@ -6,16 +6,19 @@ from timeit import default_timer as timer
 import json
 
 
-HOST = socket.gethostname()
-PORT = 8000
-SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-SOCKET.bind((HOST, PORT))
+def init():
+    global HOST, PORT, SOCKET, TIMEOUT_TIME, recv_msg_queue
 
-TIMEOUT_TIME = 20
+    HOST = socket.gethostname()
+    PORT = 8000
+    SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    SOCKET.bind((HOST, PORT))
 
-print("Server Started")
+    TIMEOUT_TIME = 20
 
-recv_msg_queue = {}
+    print("Server Started")
+
+    recv_msg_queue = {}
 
 
 def connect_players():

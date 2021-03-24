@@ -3,12 +3,10 @@ from typing import List
 import aiarena21.server.network as network
 from aiarena21.server.player import players, Player
 from aiarena21.server.game import Game
-from aiarena21.server.logs import replay, log, finish as finish_logs
+from aiarena21.server.logs import init_replay, replay, log, finish as finish_logs
 import aiarena21.server.settings as settings
 
 import re
-
-network.connect_players()
 
 
 def ask_powerups(game):
@@ -147,7 +145,12 @@ def run_game(players: List[Player]):
             'type': 'finish'
         })
 
-
-run_game(players)
-finish_logs()
-network.finish()
+def start_server(cwd, map_file, replay_path):
+    network.init()
+    settings.set_map_file(cwd, map_file)
+    settings.REPLAY_PATH = replay_path
+    init_replay()
+    network.connect_players()
+    run_game(players)
+    finish_logs()
+    network.finish()

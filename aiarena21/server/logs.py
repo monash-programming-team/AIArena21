@@ -1,10 +1,13 @@
 import json
+from aiarena21.server.settings import REPLAY_PATH
 
+replay_file = None
 
-REPLAY_FILE = 'replay.txt'
-replay_file = open(REPLAY_FILE, 'w')
-replay_file.write('')
-replay_file.flush()
+def init_replay():
+    global replay_file
+    replay_file = open(REPLAY_PATH, 'w')
+    replay_file.write('')
+    replay_file.flush()
 
 
 def replay(thing):

@@ -36,7 +36,7 @@ setup(
     install_requires=REQUIREMENTS,
     entry_points={
         "console_scripts": [
-            "aiarena21=aiarena21.main",
+            "aiarena21=aiarena21:main",
         ]
     },
 )
