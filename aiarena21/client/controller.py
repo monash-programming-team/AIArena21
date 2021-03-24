@@ -3,10 +3,8 @@ import json
 from aiarena21.client.random_source import play_auction, play_transport, play_turn, play_powerup
 import aiarena21.client.data as game_data
 from aiarena21.client.classes import Player, Map
-from aiarena21.client.data import TEAM_NAME
 
-
-def run_client():
+def run_client(TEAM_NAME):
     HOST = socket.gethostname()
     SERVER_PORT = 8000
     SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -14,7 +12,7 @@ def run_client():
 
 
     def connect_to_server():
-        SOCKET.sendto(game_data.TEAM_NAME.encode('utf-8'), (HOST, SERVER_PORT))
+        SOCKET.sendto(TEAM_NAME.encode('utf-8'), (HOST, SERVER_PORT))
         data, addr = SOCKET.recvfrom(BUFFER_SIZE)
         data = data.decode('utf-8')
         TOKEN = data.split('-')[1]

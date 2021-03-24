@@ -1,5 +1,3 @@
-import random
-TEAM_NAME = f"team{random.randint(1,9)}"
 REMAINING_TURNS = 0  # How many turns left in the game
 MAP_SIZE = (-1, -1)  # rows, cols
 MAP = None  # MAP[row][col] is either . (for free cells) or # (for blocked ones)

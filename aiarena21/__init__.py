@@ -38,6 +38,20 @@ parser.add_argument(
     help="Disable the visual representation of the game, and simply create a replay file. Much faster.",
     dest="visual",
 )
+parser.add_argument(
+    "--name-1",
+    "-n1",
+    default="Team 1",
+    help="Name of Orange team",
+    dest="name1",
+)
+parser.add_argument(
+    "--name-2",
+    "-n2",
+    default="Team 2",
+    help="Name of Blue team",
+    dest="name2",
+)
 
 def main():
     import sys, time
@@ -50,8 +64,8 @@ def main():
     replay_path = os.path.join(called_from, args.replay)
 
     server_process = Process(target=start_server, args=[called_from, args.map, replay_path], daemon=True)
-    client1_process = Process(target=run_client, args=[], daemon=True)
-    client2_process = Process(target=run_client, args=[], daemon=True)
+    client1_process = Process(target=run_client, args=[args.name1], daemon=True)
+    client2_process = Process(target=run_client, args=[args.name2], daemon=True)
 
     visual_process = None
     if args.visual:
