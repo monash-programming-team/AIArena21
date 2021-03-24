@@ -1,6 +1,5 @@
 __version__ = "1.0.0"
 
-from aiarena21 import client, visual
 import argparse, os
 from multiprocessing import Process
 
@@ -63,9 +62,25 @@ def main():
 
     replay_path = os.path.join(called_from, args.replay)
 
+    # Resolve bot paths
+    if not args.bot1.endswith(".py"):
+        args.bot1 = args.bot1 + ".py"
+    if not args.bot2.endswith(".py"):
+        args.bot2 = args.bot2 + ".py"
+    full_path_1 = os.path.join(called_from, args.bot1)
+    if not os.path.isfile(full_path_1):
+        full_path_1 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'client', args.bot1)
+    if not os.path.isfile(full_path_1):
+        raise ValueError(f"Could not find bot file {args.bot1}")
+    full_path_2 = os.path.join(called_from, args.bot2)
+    if not os.path.isfile(full_path_2):
+        full_path_2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'client', args.bot2)
+    if not os.path.isfile(full_path_2):
+        raise ValueError(f"Could not find bot file {args.bot2}")
+
     server_process = Process(target=start_server, args=[called_from, args.map, replay_path], daemon=True)
-    client1_process = Process(target=run_client, args=[args.name1], daemon=True)
-    client2_process = Process(target=run_client, args=[args.name2], daemon=True)
+    client1_process = Process(target=run_client, args=[full_path_1, args.name1], daemon=True)
+    client2_process = Process(target=run_client, args=[full_path_2, args.name2], daemon=True)
 
     visual_process = None
     if args.visual:

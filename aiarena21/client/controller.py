@@ -1,10 +1,19 @@
 import socket
 import json
-from aiarena21.client.random_source import play_auction, play_transport, play_turn, play_powerup
 import aiarena21.client.data as game_data
 from aiarena21.client.classes import Player, Map
 
-def run_client(TEAM_NAME):
+def run_client(CLIENT_SOURCE, TEAM_NAME):
+    from importlib.machinery import SourceFileLoader
+    module = SourceFileLoader("__not_main__", CLIENT_SOURCE).load_module()
+    try:
+        play_auction = getattr(module, "play_auction")
+        play_transport = getattr(module, "play_transport")
+        play_turn = getattr(module, "play_turn")
+        play_powerup = getattr(module, "play_powerup")
+    except:
+        raise ValueError(f"One of the bot methods not implemented for {CLIENT_SOURCE}.")
+
     HOST = socket.gethostname()
     SERVER_PORT = 8000
     SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
