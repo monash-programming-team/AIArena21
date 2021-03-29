@@ -113,6 +113,7 @@ def run_game(players: List[Player]):
     }
     replay(init_payload)
 
+    last_auction = 0
     for round_counter in range(game.total_rounds):
         game.deploy_items()
         game.update_heatmap()
@@ -125,8 +126,9 @@ def run_game(players: List[Player]):
         # This is a while instead of an if so if the random location after transport is still the same location
         # auction would happen again
         wagers = None
-        while players[0].location == players[1].location:
+        while players[0].location == players[1].location or round_counter - last_auction == 30:
             wagers = start_auction(game)
+            last_auction = round_counter
 
         for player in game.players:
             player.pickup_items(game)
