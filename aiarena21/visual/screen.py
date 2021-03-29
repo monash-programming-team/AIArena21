@@ -106,7 +106,7 @@ class ScreenManager:
 
     @classmethod
     def setItemPositions(cls, positions):
-        cls.instance.item_positions.update(positions)
+        cls.instance.item_positions = {key: val for (key, val) in positions.items()}
 
     @classmethod
     def setSpritePositions(cls, positions):
