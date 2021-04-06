@@ -9,3 +9,11 @@ If you are competing, you should have recieved a document containing all the doc
     pip install -e ./
 
     aiarena21 -h
+
+# Building
+
+    pip install twine
+
+    python setup.py sdist bdist_wheel
+
+    twine upload dist/*
