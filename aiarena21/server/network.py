@@ -103,7 +103,7 @@ def send_player_update(player: Player, game: Game):
     send_player(player, {
         'type': 'update',
         'data': {
-            'items': [[[y.name for y in position] for position in sublist] for sublist in game.items_map]
+            'items': game.items_score_map()
         }
     })
     send_player(player, {

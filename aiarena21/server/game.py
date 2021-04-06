@@ -103,6 +103,15 @@ class Game:
                         else:
                             self._incoming_items[x][y] = [item()]
 
+    def items_score_map(self):
+        res = [[0 for _ in range(self.map_size[1])] for __ in range(self.map_size[0])]
+        for row in range(self.map_size[0]):
+            for col in range(self.map_size[1]):
+                for item in self.items_map[row][col]:
+                    res[row][col] += item.points
+        return res
+
+
     def update_heatmap(self):
         """
         Return a 2d list with the shape of the game map for heatmap
