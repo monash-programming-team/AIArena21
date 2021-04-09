@@ -147,10 +147,11 @@ def run_game(players: List[Player]):
             'type': 'finish'
         })
 
-def start_server(cwd, map_file, replay_path):
+def start_server(cwd, map_file, replay_path, rounds):
     network.init()
     settings.set_map_file(cwd, map_file)
     settings.REPLAY_PATH = replay_path
+    settings.TOTAL_ROUNDS = rounds
     init_replay()
     network.connect_players()
     run_game(players)

@@ -1,7 +1,5 @@
 import os
 
-TOTAL_ROUNDS = 100
-
 MAP = None
 MAP_SIZE = None
 MAP_FILE = None

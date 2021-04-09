@@ -1,4 +1,4 @@
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 import argparse, os
 from multiprocessing import Process
@@ -51,6 +51,13 @@ parser.add_argument(
     help="Name of Blue team",
     dest="name2",
 )
+parser.add_argument(
+    "--round-time",
+    "-rt",
+    default=100,
+    help="How many rounds to run for",
+    dest="rounds",
+)
 
 def main():
     import sys, time
@@ -61,6 +68,12 @@ def main():
     from aiarena21.client import run_client
 
     replay_path = os.path.join(called_from, args.replay)
+
+    try:
+        args.rounds = int(args.rounds)
+        assert args.rounds > 0
+    except:
+        raise ValueError("Rounds should be a positive integer")
 
     # Resolve bot paths
     if not args.bot1.endswith(".py"):
@@ -78,7 +91,7 @@ def main():
     if not os.path.isfile(full_path_2):
         raise ValueError(f"Could not find bot file {args.bot2}")
 
-    server_process = Process(target=start_server, args=[called_from, args.map, replay_path], daemon=True)
+    server_process = Process(target=start_server, args=[called_from, args.map, replay_path, args.rounds], daemon=True)
     client1_process = Process(target=run_client, args=[full_path_1, args.name1], daemon=True)
     client2_process = Process(target=run_client, args=[full_path_2, args.name2], daemon=True)
 
