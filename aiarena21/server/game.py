@@ -138,6 +138,9 @@ class Game:
         player.update_location(row, col)
 
     def finish_turn(self, wagers_obj=None):
+        if self.current_round >= 2:
+            import aiarena21.server.network as network
+            network.TIMEOUT_TIME = 2
         recap = {
             'type': 'tick',
             'heatmap': self.heatmap,
