@@ -5,8 +5,13 @@ maps = [
 ]
 
 teams = [
-    'team1',
-    'team2',
+    'ALA',
+    'AIgamers',
+    'correcthorsebatterystaple',
+    'Directed_Acyclic_Giraffe',
+    'DRK',
+    'Matrix',
+    'Moemoekyun',
 ]
 
 workbook = xlsxwriter.Workbook("analysis.xlsx")
