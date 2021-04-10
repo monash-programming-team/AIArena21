@@ -14,7 +14,8 @@ def init():
     SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     SOCKET.bind((HOST, PORT))
 
-    TIMEOUT_TIME = 2
+    # Start with 30seconds of timeout, until round 3
+    TIMEOUT_TIME = 30
 
     print("Server Started")
 
