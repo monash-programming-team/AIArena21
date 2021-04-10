@@ -3,6 +3,7 @@ import json
 import aiarena21.client.data as game_data
 from aiarena21.client.classes import Player, Map
 
+
 def run_client(CLIENT_SOURCE, TEAM_NAME):
     from importlib.machinery import SourceFileLoader
     module = SourceFileLoader("__not_main__", CLIENT_SOURCE).load_module()
@@ -19,7 +20,6 @@ def run_client(CLIENT_SOURCE, TEAM_NAME):
     SOCKET = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     BUFFER_SIZE = 8 * 1024
 
-
     def connect_to_server():
         SOCKET.sendto(TEAM_NAME.encode('utf-8'), (HOST, SERVER_PORT))
         data, addr = SOCKET.recvfrom(BUFFER_SIZE)
@@ -27,17 +27,14 @@ def run_client(CLIENT_SOURCE, TEAM_NAME):
         TOKEN = data.split('-')[1]
         return TOKEN
 
-
     def finish():
         SOCKET.close()
-
 
     def update_game_data(data):
         for key in ['map', 'map_size', 'players', 'items', 'new_items', 'heatmap', 'remaining_turns']:
             if key in data.keys():
                 setattr(game_data, key.upper(), data[key])
         return 'ok'
-
 
     def run():
         while True:
@@ -83,28 +80,32 @@ def run_client(CLIENT_SOURCE, TEAM_NAME):
                 game_data.HEATMAP,
                 game_data.REMAINING_TURNS
             ]
-            if message['type'] == 'update':
-                # { map: ((), (), ...) }
-                callback = update_game_data(message['data'])
-            elif message['type'] == 'powerup':
-                print("Picking powerups...")
-                callback = play_powerup(*args)
-            elif message['type'] == 'turn':
-                print("It's my turn!")
-                callback = play_turn(*args)
-            elif message['type'] == 'auction':
-                print("Got into an auction.")
-                callback = play_auction(*args)
-            elif message['type'] == 'transport':
-                print("Transporting the other player")
-                callback = play_transport(*args)
-            elif message['type'] == 'finish':
-                print("GG")
-                finish()
-                break
-            else:
-                print("Unknown message received from server. Skipping...")
-                continue
+            try:
+                if message['type'] == 'update':
+                    # { map: ((), (), ...) }
+                    callback = update_game_data(message['data'])
+                elif message['type'] == 'powerup':
+                    print("Picking powerups...")
+                    callback = play_powerup(*args)
+                elif message['type'] == 'turn':
+                    print("It's my turn!")
+                    callback = play_turn(*args)
+                elif message['type'] == 'auction':
+                    print("Got into an auction.")
+                    callback = play_auction(*args)
+                elif message['type'] == 'transport':
+                    print("Transporting the other player")
+                    callback = play_transport(*args)
+                elif message['type'] == 'finish':
+                    print("GG")
+                    finish()
+                    break
+                else:
+                    print("Unknown message received from server. Skipping...")
+                    continue
+            except Exception as e:
+                print("Code crashed!")
+                callback = 'CRASH'
 
             callback_obj = {'token': TOKEN, 'message': str(callback), 'id': message_id}
             SOCKET.sendto(json.dumps(callback_obj).encode('utf-8'), (HOST, SERVER_PORT))
