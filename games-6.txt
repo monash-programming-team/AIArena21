@@ -1,0 +1,14 @@
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 1.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 2.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 3.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 4.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 5.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 6.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple DRK/DRKBot.py DRK 7.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 1.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 2.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 3.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 4.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 5.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 6.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Matrix/Matrix.py Matrix 7.txt

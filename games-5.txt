@@ -1,0 +1,14 @@
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 1.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 2.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 3.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 4.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 5.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 6.txt
+AIgamers/MrStealYourFruit.py AIgamers Moe moe kyun/moe_bot.py Moe moe kyun 7.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 1.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 2.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 3.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 4.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 5.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 6.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 7.txt

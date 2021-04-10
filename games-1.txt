@@ -1,0 +1,14 @@
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 1.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 2.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 3.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 4.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 5.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 6.txt
+ALA/god1_c12g06_a3_bot.py ALA Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 7.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 1.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 2.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 3.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 4.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 5.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 6.txt
+ALA/god1_c12g06_a3_bot.py ALA DRK/DRKBot.py DRK 7.txt

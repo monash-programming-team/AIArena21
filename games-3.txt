@@ -1,0 +1,14 @@
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 1.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 2.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 3.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 4.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 5.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 6.txt
+AIgamers/MrStealYourFruit.py AIgamers correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 7.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 1.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 2.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 3.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 4.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 5.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 6.txt
+AIgamers/MrStealYourFruit.py AIgamers Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe 7.txt

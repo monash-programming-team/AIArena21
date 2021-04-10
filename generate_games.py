@@ -1,6 +1,15 @@
-splits = 5
+splits = 10
 
-teams = [('team1', 'random_source'), ('team2', 'random_source2'), ('team3', 'random_source3')]
+teams = [
+    ('ALA', 'ALA/god1_c12g06_a3_bot.py'), 
+    ('AIgamers', 'AIgamers/MrStealYourFruit.py'), 
+    ('correcthorsebatterystaple', 'correcthorsebatterystaple/correcthorsebatterystaple.py'),
+    ('Directed_Acyclic_Giraffe', 'Directed Acyclic Giraffe/the_giraffe_himself.py'),
+    ('DRK', 'DRK/DRKBot.py'),
+    ('Matrix', 'Matrix/Matrix.py'),
+    ('Moe moe kyun', 'Moe moe kyun/moe_bot.py'),
+]
+
 maps = ['1.txt', '2.txt', '3.txt', '4.txt', '5.txt', '6.txt', '7.txt']
 
 total_games = (len(maps) * (len(teams) * (len(teams) - 1)) // 2)

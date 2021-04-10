@@ -1,0 +1,14 @@
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 1.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 2.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 3.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 4.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 5.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 6.txt
+ALA/god1_c12g06_a3_bot.py ALA AIgamers/MrStealYourFruit.py AIgamers 7.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 1.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 2.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 3.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 4.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 5.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 6.txt
+ALA/god1_c12g06_a3_bot.py ALA correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple 7.txt

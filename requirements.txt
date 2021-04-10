@@ -2,8 +2,5 @@ pygame>=2.0.1
 opensimplex>=0.3
 numpy
 scipy
-torch
-torchvision
-torchaudio
 pandas
 scikit-learn

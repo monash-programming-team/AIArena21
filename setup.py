@@ -14,7 +14,7 @@ with open(os.path.join(HERE, "requirements.txt")) as fid:
 from aiarena21 import __version__
 
 setup(
-    name="ai-arena-21",
+    name="aiarena21",
     version=__version__,
     description="1v1 Game for AIArena competition 2021",
     long_description=README,

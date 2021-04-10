@@ -1,0 +1,14 @@
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 1.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 2.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 3.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 4.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 5.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 6.txt
+correcthorsebatterystaple/correcthorsebatterystaple.py correcthorsebatterystaple Moe moe kyun/moe_bot.py Moe moe kyun 7.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 1.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 2.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 3.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 4.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 5.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 6.txt
+Directed Acyclic Giraffe/the_giraffe_himself.py Directed_Acyclic_Giraffe DRK/DRKBot.py DRK 7.txt
